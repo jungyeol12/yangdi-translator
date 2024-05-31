@@ -148,15 +148,7 @@ class _MainPageState extends State<MainPage> {
             );
           }
         ),
-        title: Row(
-          children: [
-            Image.asset('assets/logo.png'),
-            Text(
-              "양디 번역기",
-              style: TextStyle(color: Colors.white),
-            ),
-          ],
-        ),
+        title: Image.asset('assets/logo.png'),
         backgroundColor: color12,
       ),
 
@@ -205,11 +197,11 @@ class _MainPageState extends State<MainPage> {
               ),
             ),
             Container(
-              height: 500,
+              height: 200,
               child: ListView(
                 children: List.generate(translatedTexts.length, (index) => Text(translatedTexts[index])),
               ),
-            )
+            ),
           ],
         ),
       ),

@@ -21,15 +21,7 @@ class _MenuScreenState extends State<MenuScreen> {
             Navigator.pop(context);
           },
         ),
-        title: Row(
-          children: [
-            Image.asset('assets/logo.png'),
-            Text(
-              "메뉴",
-              style: TextStyle(color: Colors.white),
-            ),
-          ],
-        ),
+        title: Image.asset('assets/logo.png'),
         backgroundColor: color12,
       ),
       body: Container(
